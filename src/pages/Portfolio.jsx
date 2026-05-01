@@ -724,31 +724,28 @@ const Portfolio = () => {
   return (
     <body>
       <div className="portfolio-page">
-        
         <section className="portfolio-Wraper">
           <h1 className="portfilioHeaderText">My Portfolio</h1>
 
           {/* Index Section */}
           <nav className="portfolio-index">
-
-            <h2>Core Work</h2>
-
-            <div className="sublist">
-
-              <a href="#featured">Featured Projects</a>
-
-              <a href="#fullStack">Full-Stack Applications</a>
-
-              <a href="#systems">Systems & Backend Engineering</a>
+            <div className="index-row">
+              <h2>Core Work</h2>
+              <div className="sublist">
+                <a href="#featured">Featured</a>
+                <a href="#fullStack">Full-Stack</a>
+                <a href="#systems">Systems</a>
+              </div>
             </div>
 
-            <h2>Software Engineering</h2>
-
-            <div className="sublist">
-              <a href="#APIServices">APIs & Services</a>
-              <a href="#pipelineDatabases">Data Pipelines & Databases (SQL, NoSQL)</a>
-              <a href="#frontend">Frontend</a>
-              <a href="#languages">Languages</a>
+            <div className="index-row">
+              <h2>Software</h2>
+              <div className="sublist">
+                <a href="#apis">APIs</a>
+                <a href="#dataPipelines">Data</a>
+                <a href="#frontend">Frontend</a>
+                <a href="#languages">Languages</a>
+              </div>
             </div>
 
             <h2>Math, Modeling & Simulation</h2>
@@ -760,7 +757,9 @@ const Portfolio = () => {
             <h2>Embedded & Hardware Systems</h2>
 
             <div className="sublist">
-              <a href="#microcontrollers">Microcontrollers (Arduino, Raspberry Pi)</a>
+              <a href="#microcontrollers">
+                Microcontrollers (Arduino, Raspberry Pi)
+              </a>
             </div>
 
             <h2>Graphics & 3D</h2>
@@ -768,14 +767,12 @@ const Portfolio = () => {
             <div className="sublist">
               <a href="#3DModeling">3D Modeling</a>
             </div>
-            
+
             <h2>Engineering Practices</h2>
 
             <div className="sublist">
               <a href="#test">Test-Driven Development (TDD)</a>
             </div>
-
-
           </nav>
 
           <div id="apis" className="mongoDBHeader">
