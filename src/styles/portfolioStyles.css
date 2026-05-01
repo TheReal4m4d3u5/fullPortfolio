@@ -12,6 +12,16 @@ body {
   background: black;
 }
 
+
+.section-row {
+  margin-bottom: 10px;
+}
+
+.section-row h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
 .sublist {
   display: flex;
   flex-wrap: wrap;
