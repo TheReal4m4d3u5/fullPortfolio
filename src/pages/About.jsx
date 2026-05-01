@@ -18,25 +18,27 @@ const About = () => {
 
         <section className="aboutTextSection">
           <div className="aboutTextWraper">
-            <div className="aboutTextHeader">Backend & Systems Engineer | APIs, Data, Reliability</div>
+            <div className="aboutTextHeader">Full-Stack Software & Electrical Engineer | Systems, Data, Graphics, and Embedded Engineering</div>
             <div className="aboutText">
               <p>
-                Software Engineer focused on building reliable backend systems and scalable data workflows, with over 10 years of experience delivering high-quality solutions in production environments.
+                I am a multidisciplinary engineer with over 10 years of experience building reliable, scalable systems across software and hardware domains. My work spans backend and frontend development, embedded systems, and low-level engineering, allowing me to design and implement complete end-to-end solutions—from user interfaces to distributed infrastructure and physical devices.
               </p>
 
               <p>
-                My work centers on API design, data validation, system reliability, and performance optimization across large-scale applications. I bring a strong foundation in mathematics and statistics, applying analytical thinking to ensure data integrity and correctness in complex systems.
+                I specialize in backend systems, API design, and data-intensive applications, with a strong emphasis on reliability, performance, and correctness. On the frontend, I build clean, responsive interfaces that connect seamlessly to complex systems. I bring a deep foundation in mathematics and statistics, applying analytical thinking to areas such as data modeling, optimization, and system design.
               </p>
               <p>
-                In addition to backend development, I have experience working close to hardware and embedded systems, giving me a systems-level perspective that spans from low-level interactions to distributed application design.
+                Beyond traditional software development, I have hands-on experience with microcontrollers, FPGA development, circuit design, and hardware-software integration. I also work with 3D modeling and graphics, enabling me to bridge the gap between digital systems and real-world applications, including visualization and simulation.
               </p>
               <p>
-                Currently, I am building ZeroLedger, a platform focused on modeling and analyzing CO₂ footprint through data-driven workflows, combining backend engineering with applied mathematical modeling.
+                My engineering approach is systems-driven: I think in terms of architecture, constraints, and tradeoffs across the entire stack—from low-level hardware interactions to large-scale distributed systems. I focus on building solutions that are not only functional, but efficient, maintainable, and scalable.
               </p>
               <p>
-                I am particularly interested in backend, platform, and distributed systems roles where reliability, data accuracy, and system design are critical.
+                Currently, I am building ZeroLedger, a platform focused on modeling and analyzing CO₂ footprints through data-driven workflows, combining backend engineering, mathematical modeling, and system-level design.
               </p>
-
+              <p>
+                I am particularly interested in roles that sit at the intersection of software, hardware, and systems engineering—where deep technical understanding, data accuracy, and thoughtful design are critical.
+              </p>
             </div>
 
           </div>
