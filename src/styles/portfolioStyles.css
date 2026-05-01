@@ -12,139 +12,89 @@ body {
   background: black;
 }
 
-
-.section-row {
-  margin-bottom: 4px;
-}
-
-.section-row h2 {
-  font-size: 1.2rem;
-  margin-bottom: 5px;
-}
-
-.sublist {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 200px 14px;
-  margin-bottom: 0px;
-}
-
-.sublist a {
-  text-decoration: underline;
-}
-
-.sublist a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #1a0dab;
-
-  padding: 4px 10px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.15);
-
-  transition: all 0.2s ease;
-}
-
-.sublist a:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-
 .portfolio-page {
-
-
-
-    background: linear-gradient(to bottom,
-      #ffd7eb,
-      /* Very soft pink */
-      #ffc4e3,
-      /* Light pastel pink */
-      #ffb1db,
-      /* Soft pink */
-      #ff9fd3,
-      /* Soft pink with a hint of lavender */
-      #ff8ccc,
-      /* Pinkish lavender */
-      #e887c7,
-      /* Slightly deeper pink-lavender */
-      #d17fc3,
-      /* Muted lavender with pink */
-      #b775c2,
-      /* Light purple-pink */
-      #a069be,
-      /* Soft purple with pink tones */
-      #7a61d2,
-      /* Muted blue-purple */
-      #5760d0
-      /* Darker purple with a hint more blue */
-    );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #ffd7eb,
+    #ffc4e3,
+    #ffb1db,
+    #ff9fd3,
+    #ff8ccc,
+    #e887c7,
+    #d17fc3,
+    #b775c2,
+    #a069be,
+    #7a61d2,
+    #5760d0
+  );
   background-attachment: fixed;
-  /* Keeps the image fixed on scroll */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* text-align: center; */
-  /* align-items: center; */
-
-
-
 }
 
 .portfolio-Wraper {
   width: 100%;
-  padding: 20px 20px 60px;
+  padding: 8px 20px 60px;
 }
 
 .portfilioHeaderText {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-shadow: 2px 2px 8px white;
-  margin-bottom: 24px;
+  margin: 0 0 14px 0;
 }
 
+/* Compact list-style index */
 .portfolio-index {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 28px auto;
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+
+.index-row {
+  display: grid;
+  grid-template-columns: 210px 1fr;
   align-items: center;
-  text-align: center;
-  gap: 0px;
-  margin-bottom: 20px;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-.portfolio-index h4 {
-  gap: 4px;
-  margin-bottom: 6px;   /* reduce space under "Core Work" */
-    margin: 8px 0 2px 0;
-  line-height: 1.2;
+.index-row h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-align: right;
+  font-weight: 700;
 }
 
-.top-links,
-.sub-links {
+.sublist {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0;
 }
 
-.top-links {
-  gap: 20px;
-}
-
-.sub-links {
-  gap: 15px;
-}
-
-.top-links a,
-.sub-links a {
+.sublist a {
+  font-size: 0.8rem;
+  line-height: 1;
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  transition: all 0.2s ease;
   white-space: nowrap;
-  text-decoration: underline;
-  color: black;
-  font-weight: bold;
+}
+
+.sublist a:hover {
+  background: rgba(255, 255, 255, 0.38);
+  transform: translateY(-1px);
 }
 
 .mongoDBHeader,
@@ -156,17 +106,17 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.6rem;
   text-shadow: 2px 2px 8px white;
-  margin-top: 80px;
-  margin-bottom: 16px;
+  margin-top: 36px;
+  margin-bottom: 12px;
 }
 
 .disclaimerWraper {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .disclaimer {
@@ -183,7 +133,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   flex-wrap: wrap;
 }
 
@@ -209,8 +159,31 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .portfolio-Wraper {
+    padding-top: 6px;
+  }
+
   .portfilioHeaderText {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-index {
+    max-width: 95%;
+  }
+
+  .index-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .index-row h4 {
+    text-align: center;
+  }
+
+  .sublist {
+    justify-content: center;
   }
 
   .mongoDBHeader,
@@ -219,32 +192,19 @@ body {
   .matLabHeader,
   .cHeader,
   .monHeader {
-    font-size: 2.25rem;
-    margin-top: 60px;
-  }
-
-  .top-links {
-    gap: 14px;
-  }
-
-  .sub-links {
-    gap: 12px;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .disclaimerWraper {
-    padding: 0 10px;
-  }
-
-  .disclaimer {
-    max-width: 500px;
+    font-size: 2.1rem;
+    margin-top: 32px;
   }
 }
 
 @media screen and (max-width: 475px) {
   .portfilioHeaderText {
     font-size: 2rem;
+  }
+
+  .sublist a {
+    font-size: 0.75rem;
+    padding: 4px 8px;
   }
 
   .mongoDBHeader,
@@ -254,12 +214,7 @@ body {
   .cHeader,
   .monHeader {
     font-size: 1.8rem;
-    margin-top: 50px;
-  }
-
-  .top-links,
-  .sub-links {
-    gap: 10px;
+    margin-top: 28px;
   }
 
   .disclaimer {
