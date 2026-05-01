@@ -722,7 +722,7 @@ const javaScriptProjects = [
 
 const Portfolio = () => {
   return (
-    <body>
+
       <div className="portfolio-page">
         <section className="portfolio-Wraper">
           <h1 className="portfilioHeaderText">My Portfolio</h1>
@@ -1220,7 +1220,7 @@ const Portfolio = () => {
           ))} */}
         </section>
       </div>
-    </body>
+  
   );
 };
 
