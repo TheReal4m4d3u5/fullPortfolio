@@ -860,6 +860,37 @@ const Portfolio = () => {
                 <a href="#rtl">React Testing Library</a>
               </div>
             </div>
+
+            <h4>Observability</h4>
+            <div className="sublist">
+              <a href="#logging">Logging</a>
+              <a href="#monitoring">Monitoring</a>
+              <a href="#metrics">Metrics</a>
+              <a href="#debugging">Debugging</a>
+            </div>
+
+            <h4>Security</h4>
+            <div className="sublist">
+              <a href="#auth">Authentication</a>
+              <a href="#authorization">Authorization</a>
+              <a href="#validation">Input Validation</a>
+              <a href="#encryption">Encryption</a>
+            </div>
+
+            <h4>Networking</h4>
+            <div className="sublist">
+              <a href="#http">HTTP</a>
+              <a href="#tcp">TCP/IP</a>
+              <a href="#dns">DNS</a>
+              <a href="#loadbalancing">Load Balancing</a>
+            </div>
+
+            <h4>Concurrency</h4>
+            <div className="sublist">
+              <a href="#async">Async / Await</a>
+              <a href="#multithreading">Multithreading</a>
+              <a href="#eventloop">Event Loop</a>
+            </div>
           </nav>
 
           <div id="apis" className="mongoDBHeader">
