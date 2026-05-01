@@ -24,7 +24,21 @@ body {
   text-decoration: underline;
 }
 
+.sublist a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #1a0dab;
 
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+
+  transition: all 0.2s ease;
+}
+
+.sublist a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 
 .portfolio-page {
