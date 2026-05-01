@@ -724,35 +724,58 @@ const Portfolio = () => {
   return (
     <body>
       <div className="portfolio-page">
+        
         <section className="portfolio-Wraper">
           <h1 className="portfilioHeaderText">My Portfolio</h1>
 
           {/* Index Section */}
           <nav className="portfolio-index">
-            <div className="top-links">
+
+            <h1>Core Work<h1/>
+
+            <div className="sublist">
+
               <a href="#featured">Featured Projects</a>
 
-              <a href="#backend">Backend Systems</a>
+              <a href="#fullStack">Full-Stack Applications</a>
 
-              <a href="#mathModelingSystems">Math & Modeling Systems</a>
-
-              <a href="#embedded">Embedded Systems</a>
+              <a href="#systems">Systems & Backend Engineering</a>
             </div>
 
-            <div className="sub-links">
-              <a href="#apis">APIs</a>
-              <a href="#dataPipelines">Data Pipelines</a>
-              <a href="#sql">SQL</a>
-              <a href="#java">Java</a>
-              <a href="#python">Python</a>
-              <a href="#matlab">Matlab</a>
-              <a href="#simulation">Simulation</a>
-              <a href="#optimization">Optimization</a>
-              <a href="#forcasting">Forcasting</a>
-              <a href="#tdd">TDD</a>
-              <a href="#bdd">BDD</a>
-              <a href="#cicd">CI/CD DevOps</a>
+            <h1>Software Engineering<h1/>
+
+            <div className="sublist">
+              <a href="#APIServices">APIs & Services</a>
+              <a href="#pipelineDatabases">Data Pipelines & Databases (SQL, NoSQL)</a>
+              <a href="#frontend">Frontend</a>
+              <a href="#languages">Languages</a>
             </div>
+
+            <h1>Math, Modeling & Simulation<h1/>
+
+            <div className="sublist">
+              <a href="#mathModeling">Mathematical Modeling</a>
+            </div>
+
+            <h1>Embedded & Hardware Systems<h1/>
+
+            <div className="sublist">
+              <a href="#microcontrollers">Microcontrollers (Arduino, Raspberry Pi)</a>
+            </div>
+
+            <h1>Graphics & 3D<h1/>
+
+            <div className="sublist">
+              <a href="#3DModeling">3D Modeling</a>
+            </div>
+            
+            <h1>Engineering Practices<h1/>
+
+            <div className="sublist">
+              <a href="#test">Test-Driven Development (TDD)</a>
+            </div>
+
+
           </nav>
 
           <div id="apis" className="mongoDBHeader">
