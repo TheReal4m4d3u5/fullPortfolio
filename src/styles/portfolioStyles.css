@@ -119,6 +119,7 @@ body {
 
 .portfolio-index h4 {
   margin-bottom: 6px;   /* reduce space under "Core Work" */
+  margin-bottom: 4px;
 }
 
 .top-links,
