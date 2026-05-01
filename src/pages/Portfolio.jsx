@@ -748,30 +748,37 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <h2>Math, Modeling & Simulation</h2>
+            <div className="index-row">
+              <h4>Math, Modeling & Simulation</h4>
 
-            <div className="sublist">
-              <a href="#mathModeling">Mathematical Modeling</a>
+              <div className="sublist">
+                <a href="#mathModeling">Mathematical Modeling</a>
+              </div>
+            </div>
+            <div className="index-row">
+              <h4>Embedded & Hardware Systems</h4>
+
+              <div className="sublist">
+                <a href="#microcontrollers">
+                  Microcontrollers (Arduino, Raspberry Pi)
+                </a>
+              </div>
             </div>
 
-            <h2>Embedded & Hardware Systems</h2>
+            <div className="index-row">
+              <h4>Graphics & 3D</h4>
 
-            <div className="sublist">
-              <a href="#microcontrollers">
-                Microcontrollers (Arduino, Raspberry Pi)
-              </a>
+              <div className="sublist">
+                <a href="#3DModeling">3D Modeling</a>
+              </div>
             </div>
 
-            <h2>Graphics & 3D</h2>
+            <div className="index-row">
+              <h4>Engineering Practices</h4>
 
-            <div className="sublist">
-              <a href="#3DModeling">3D Modeling</a>
-            </div>
-
-            <h2>Engineering Practices</h2>
-
-            <div className="sublist">
-              <a href="#test">Test-Driven Development (TDD)</a>
+              <div className="sublist">
+                <a href="#test">Test-Driven Development (TDD)</a>
+              </div>
             </div>
           </nav>
 
