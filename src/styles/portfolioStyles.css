@@ -37,35 +37,59 @@ body {
 }
 
 .portfilioHeaderText {
-  font-size: 2.3rem;
-  margin: 0 0 8px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+  text-shadow: 2px 2px 8px white;
+  margin: 0 0 14px 0;
 }
 
+/* Compact list-style index */
 .portfolio-index {
-  max-width: 700px;
-  margin: 0 auto 20px auto;
-  gap: 3px;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 28px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .index-row {
-  grid-template-columns: 220px 1fr;
-  gap: 8px;
-  padding: 3px 10px;
-  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .index-row h4 {
-  font-size: 0.88rem;
-  line-height: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  text-align: right;
+  font-weight: 700;
 }
 
 .sublist {
-  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0;
 }
 
 .sublist a {
-  font-size: 0.72rem;
-  padding: 3px 8px;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-decoration: none;
+  color: #1a0dab;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
 .sublist a:hover {
