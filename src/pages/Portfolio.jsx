@@ -730,7 +730,7 @@ const Portfolio = () => {
           {/* Index Section */}
           <nav className="portfolio-index">
             <div className="index-row">
-              <h3>Core Work</h3>
+              <h4>Core Work</h4>
               <div className="sublist">
                 <a href="#featured">Featured</a>
                 <a href="#fullStack">Full-Stack</a>
@@ -739,7 +739,7 @@ const Portfolio = () => {
             </div>
 
             <div className="index-row">
-              <h3>Software</h3>
+              <h4>Software</h4>
               <div className="sublist">
                 <a href="#apis">APIs</a>
                 <a href="#dataPipelines">Data</a>
