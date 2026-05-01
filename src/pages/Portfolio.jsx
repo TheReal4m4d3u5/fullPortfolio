@@ -835,10 +835,13 @@ const Portfolio = () => {
             </div>
 
             <div className="index-row">
-              <h4>DevOps</h4>
+              <h4>DevOps & Infrastructure</h4>
               <div className="sublist">
                 <a href="#cicd">CI/CD</a>
                 <a href="#docker">Docker</a>
+                <a href="#kubernetes">Kubernetes</a>
+                <a href="#jenkins">Jenkins</a>
+                <a href="#terraform">Terraform</a>
                 <a href="#githubActions">GitHub Actions</a>
                 <a href="#circleci">CircleCI</a>
                 <a href="#render">Render</a>
