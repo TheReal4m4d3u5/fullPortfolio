@@ -739,12 +739,50 @@ const Portfolio = () => {
             </div>
 
             <div className="index-row">
+              <h4>Backend</h4>
+              <div className="sublist">
+                <a href="#java">Java</a>
+                <a href="#node">Node.js</a>
+                <a href="#python">Python</a>
+                <a href="#csharp">C#</a>
+                <a href="#apis">REST APIs</a>
+                <a href="#graphql">GraphQL</a>
+                <a href="#auth">Auth / JWT</a>
+              </div>
+            </div>
+
+            <div className="index-row">
+              <h4>Frontend</h4>
+              <div className="sublist">
+                <a href="#react">React</a>
+                <a href="#javascript">JavaScript</a>
+                <a href="#typescript">TypeScript</a>
+                <a href="#htmlcss">HTML / CSS</a>
+                <a href="#ui">Responsive UI</a>
+              </div>
+            </div>
+
+            <div className="index-row">
+              <h4>Data Systems</h4>
+              <div className="sublist">
+                <a href="#sql">SQL</a>
+                <a href="#postgresql">PostgreSQL</a>
+                <a href="#mongodb">MongoDB</a>
+                <a href="#sequelize">Sequelize</a>
+                <a href="#mongoose">Mongoose</a>
+                <a href="#pipelines">Data Pipelines</a>
+              </div>
+            </div>
+
+            <div className="index-row">
               <h4>Systems</h4>
               <div className="sublist">
-                <a href="#fullStack">Full Stack</a>
-                <a href="#backend">Backend</a>
-                <a href="#systems">Distributed</a>
-                <a href="#api">APIs</a>
+                <a href="#distributed">Distributed</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#performance">Performance</a>
+                <a href="#reliability">Reliability</a>
+                <a href="#caching">Caching</a>
+                <a href="#queues">Queues</a>
               </div>
             </div>
 
@@ -758,50 +796,65 @@ const Portfolio = () => {
                 <a href="#csharp">C#</a>
                 <a href="#c">C</a>
                 <a href="#cpp">C++</a>
-                <a href="#node">Node.js</a>
+                <a href="#matlab">MATLAB</a>
               </div>
             </div>
 
             <div className="index-row">
-              <h4>Software</h4>
-              <div className="sublist">
-                <a href="#apis">APIs</a>
-                <a href="#dataPipelines">Data</a>
-                <a href="#frontend">Frontend</a>
-                <a href="#languages">Languages</a>
-              </div>
-            </div>
-
-            <div className="index-row">
-              <h4>Math, Modeling & Simulation</h4>
-
+              <h4>Math & Modeling</h4>
               <div className="sublist">
                 <a href="#mathModeling">Mathematical Modeling</a>
+                <a href="#simulation">Simulation</a>
+                <a href="#optimization">Optimization</a>
+                <a href="#forecasting">Forecasting</a>
+                <a href="#statistics">Statistics</a>
+                <a href="#monteCarlo">Monte Carlo</a>
               </div>
             </div>
-            <div className="index-row">
-              <h4>Embedded & Hardware Systems</h4>
 
+            <div className="index-row">
+              <h4>Embedded & Hardware</h4>
               <div className="sublist">
-                <a href="#microcontrollers">
-                  Microcontrollers (Arduino, Raspberry Pi)
-                </a>
+                <a href="#microcontrollers">Microcontrollers</a>
+                <a href="#arduino">Arduino</a>
+                <a href="#raspberryPi">Raspberry Pi</a>
+                <a href="#fpga">FPGA</a>
+                <a href="#circuits">Circuits</a>
+                <a href="#electronics">Electronics</a>
               </div>
             </div>
 
             <div className="index-row">
               <h4>Graphics & 3D</h4>
-
               <div className="sublist">
                 <a href="#3DModeling">3D Modeling</a>
+                <a href="#graphics">Graphics</a>
+                <a href="#visualization">Visualization</a>
+                <a href="#simulationGraphics">Simulation Graphics</a>
               </div>
             </div>
 
             <div className="index-row">
-              <h4>Engineering Practices</h4>
-
+              <h4>DevOps</h4>
               <div className="sublist">
-                <a href="#test">Test-Driven Development (TDD)</a>
+                <a href="#cicd">CI/CD</a>
+                <a href="#docker">Docker</a>
+                <a href="#githubActions">GitHub Actions</a>
+                <a href="#circleci">CircleCI</a>
+                <a href="#render">Render</a>
+                <a href="#netlify">Netlify</a>
+              </div>
+            </div>
+
+            <div className="index-row">
+              <h4>Testing</h4>
+              <div className="sublist">
+                <a href="#tdd">TDD</a>
+                <a href="#bdd">BDD</a>
+                <a href="#selenium">Selenium</a>
+                <a href="#cypress">Cypress</a>
+                <a href="#vitest">Vitest</a>
+                <a href="#rtl">React Testing Library</a>
               </div>
             </div>
           </nav>
