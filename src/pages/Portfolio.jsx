@@ -739,6 +739,30 @@ const Portfolio = () => {
             </div>
 
             <div className="index-row">
+              <h4>Systems</h4>
+              <div className="sublist">
+                <a href="#fullStack">Full Stack</a>
+                <a href="#backend">Backend</a>
+                <a href="#systems">Distributed</a>
+                <a href="#api">APIs</a>
+              </div>
+            </div>
+
+            <div className="index-row">
+              <h4>Languages</h4>
+              <div className="sublist">
+                <a href="#java">Java</a>
+                <a href="#javascript">JavaScript</a>
+                <a href="#typescript">TypeScript</a>
+                <a href="#python">Python</a>
+                <a href="#csharp">C#</a>
+                <a href="#c">C</a>
+                <a href="#cpp">C++</a>
+                <a href="#node">Node.js</a>
+              </div>
+            </div>
+
+            <div className="index-row">
               <h4>Software</h4>
               <div className="sublist">
                 <a href="#apis">APIs</a>
