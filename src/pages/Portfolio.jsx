@@ -726,7 +726,9 @@ const Portfolio = () => {
       <div className="portfolio-page">
         <section className="portfolio-Wraper">
           <h1 className="portfilioHeaderText">My Portfolio</h1>
+        </section>
 
+        <section className="index-Wraper">
           {/* Index Section */}
           <nav className="portfolio-index">
             <div className="index-row">
@@ -888,6 +890,18 @@ const Portfolio = () => {
                 <a href="#loadbalancing">Load Balancing</a>
               </div>
             </div>
+
+            <div className="index-row">
+              <h4>Concepts</h4>
+              <div className="sublist">
+                <a>Scalability</a>
+                <a>Fault Tolerance</a>
+                <a>Consistency</a>
+                <a>Latency</a>
+                <a>Throughput</a>
+              </div>
+            </div>
+
             <div className="index-row">
               <h4>Concurrency</h4>
               <div className="sublist">
