@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+
+
+
+
+
+.portfolio-page {
+
+
+
+    background: linear-gradient(to bottom,
+      #ffd7eb,
+      /* Very soft pink */
+      #ffc4e3,
+      /* Light pastel pink */
+      #ffb1db,
+      /* Soft pink */
+      #ff9fd3,
+      /* Soft pink with a hint of lavender */
+      #ff8ccc,
+      /* Pinkish lavender */
+      #e887c7,
+      /* Slightly deeper pink-lavender */
+      #d17fc3,
+      /* Muted lavender with pink */
+      #b775c2,
+      /* Light purple-pink */
+      #a069be,
+      /* Soft purple with pink tones */
+      #7a61d2,
+      /* Muted blue-purple */
+      #5760d0
+      /* Darker purple with a hint more blue */
+    );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  /* Keeps the image fixed on scroll */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* text-align: center; */
+  /* align-items: center; */
+
+
+
+}
+
+.portfolio-Wraper {
+  width: 100%;
+  padding: 20px 20px 60px;
+}
+
+.portfilioHeaderText {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px white;
+  margin-bottom: 24px;
+}
+
+.portfolio-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.top-links,
+.sub-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.top-links {
+  gap: 20px;
+}
+
+.sub-links {
+  gap: 15px;
+}
+
+.top-links a,
+.sub-links a {
+  white-space: nowrap;
+  text-decoration: underline;
+  color: black;
+  font-weight: bold;
+}
+
+.mongoDBHeader,
+.javaHeader,
+.javaScriptHeader,
+.matLabHeader,
+.cHeader,
+.monHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px white;
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+
+.disclaimerWraper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  font-size: 0.95rem;
+  padding: 0 16px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolioCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-btn {
+  color: black;
+}
+
+.custom-btn:hover {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .portfilioHeaderText {
+    font-size: 2.5rem;
+  }
+
+  .mongoDBHeader,
+  .javaHeader,
+  .javaScriptHeader,
+  .matLabHeader,
+  .cHeader,
+  .monHeader {
+    font-size: 2.25rem;
+    margin-top: 60px;
+  }
+
+  .top-links {
+    gap: 14px;
+  }
+
+  .sub-links {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .disclaimerWraper {
+    padding: 0 10px;
+  }
+
+  .disclaimer {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .portfilioHeaderText {
+    font-size: 2rem;
+  }
+
+  .mongoDBHeader,
+  .javaHeader,
+  .javaScriptHeader,
+  .matLabHeader,
+  .cHeader,
+  .monHeader {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+
+  .top-links,
+  .sub-links {
+    gap: 10px;
+  }
+
+  .disclaimer {
+    font-size: 0.9rem;
+  }
+}
