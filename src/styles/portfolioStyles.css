@@ -28,6 +28,7 @@ body {
   justify-content: center;
   gap: 10px 20px;
   margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .sublist a {
@@ -120,6 +121,8 @@ body {
 .portfolio-index h4 {
   gap: 4px;
   margin-bottom: 6px;   /* reduce space under "Core Work" */
+    margin: 8px 0 2px 0;
+  line-height: 1.2;
 }
 
 .top-links,
