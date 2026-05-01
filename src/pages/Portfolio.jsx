@@ -733,7 +733,7 @@ const Portfolio = () => {
 
             <h1>Core Work<h1/>
 
-            <div className="sublist">
+            {/* <div className="sublist">
 
               <a href="#featured">Featured Projects</a>
 
@@ -773,7 +773,7 @@ const Portfolio = () => {
 
             <div className="sublist">
               <a href="#test">Test-Driven Development (TDD)</a>
-            </div>
+            </div> */}
 
 
           </nav>
