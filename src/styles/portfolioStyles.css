@@ -14,8 +14,10 @@ body {
 
 .sublist {
   display: flex;
-  gap: 20px;          /* controls spacing between links */
-  flex-wrap: wrap;    /* prevents overflow on smaller screens */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+  margin-bottom: 10px;
 }
 
 .sublist a {
