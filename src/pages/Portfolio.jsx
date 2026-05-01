@@ -731,9 +731,9 @@ const Portfolio = () => {
           {/* Index Section */}
           <nav className="portfolio-index">
 
-            <h1>Core Work<h1/>
+            <h1>Core Work</h1>
 
-            {/* <div className="sublist">
+            <div className="sublist">
 
               <a href="#featured">Featured Projects</a>
 
@@ -742,7 +742,7 @@ const Portfolio = () => {
               <a href="#systems">Systems & Backend Engineering</a>
             </div>
 
-            <h1>Software Engineering<h1/>
+            <h1>Software Engineering</h1>
 
             <div className="sublist">
               <a href="#APIServices">APIs & Services</a>
@@ -751,29 +751,29 @@ const Portfolio = () => {
               <a href="#languages">Languages</a>
             </div>
 
-            <h1>Math, Modeling & Simulation<h1/>
+            <h1>Math, Modeling & Simulation</h1>
 
             <div className="sublist">
               <a href="#mathModeling">Mathematical Modeling</a>
             </div>
 
-            <h1>Embedded & Hardware Systems<h1/>
+            <h1>Embedded & Hardware Systems</h1>
 
             <div className="sublist">
               <a href="#microcontrollers">Microcontrollers (Arduino, Raspberry Pi)</a>
             </div>
 
-            <h1>Graphics & 3D<h1/>
+            <h1>Graphics & 3D</h1>
 
             <div className="sublist">
               <a href="#3DModeling">3D Modeling</a>
             </div>
             
-            <h1>Engineering Practices<h1/>
+            <h1>Engineering Practices</h1>
 
             <div className="sublist">
               <a href="#test">Test-Driven Development (TDD)</a>
-            </div> */}
+            </div>
 
 
           </nav>
