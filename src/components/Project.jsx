@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
-import { Card } from 'react-bootstrap';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Lightbox from 'yet-another-react-lightbox';
+import React, { useState } from "react";
+import { Card } from "react-bootstrap";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Lightbox from "yet-another-react-lightbox";
 
-import 'swiper/css';
-import 'yet-another-react-lightbox/styles.css';
+import "swiper/css";
+import "yet-another-react-lightbox/styles.css";
 
-import '../styles/projectStyles.css';
-import Tag from './Tag';
+import "../styles/projectStyles.css";
+import Tag from "./Tag";
+
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Project = ({
   title,
@@ -37,7 +41,13 @@ const Project = ({
               <video src={video} controls className="project-media" />
             ) : (
               <>
-                <Swiper spaceBetween={10} slidesPerView={1}>
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation
+                  pagination={{ clickable: true }}
+                  modules={[Navigation, Pagination]}
+                >
                   {galleryImages.map((img, index) => (
                     <SwiperSlide key={index}>
                       <img
@@ -68,9 +78,7 @@ const Project = ({
           <Card.Body className="d-flex flex-column">
             <Card.Title>{title}</Card.Title>
 
-            <Card.Text className="project-description">
-              {description}
-            </Card.Text>
+            <Card.Text className="project-description">{description}</Card.Text>
 
             {Array.isArray(tags) && tags.length > 0 && (
               <div className="flex flex-wrap">
