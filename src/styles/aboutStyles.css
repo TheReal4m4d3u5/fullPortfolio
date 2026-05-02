@@ -34,6 +34,17 @@
   justify-content: flex-start;
 }
 
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  margin: 16px 0;
+}
+
 .profilePhoto {
   height: 300px;
   width: auto;
