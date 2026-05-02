@@ -769,6 +769,37 @@ const Portfolio = () => {
           </div>
 
           <div className="index-row">
+            <h4>Object-Oriented Programming</h4>
+            <div className="sublist">
+              <a href="#encapsulation">Encapsulation</a>
+              <a href="#inheritance">Inheritance</a>
+              <a href="#polymorphism">Polymorphism</a>
+              <a href="#abstraction">Abstraction</a>
+
+              <a href="#interfaces">Interfaces</a>
+              <a href="#abstract-classes">Abstract Classes</a>
+
+              <a href="#composition">Composition</a>
+              <a href="#aggregation">Aggregation</a>
+
+              <a href="#solid">SOLID Principles</a>
+              <a href="#srp">Single Responsibility</a>
+              <a href="#ocp">Open/Closed</a>
+              <a href="#lsp">Liskov Substitution</a>
+              <a href="#isp">Interface Segregation</a>
+              <a href="#dip">Dependency Inversion</a>
+
+              <a href="#constructor-chaining">Constructor Chaining</a>
+              <a href="#method-overloading">Method Overloading</a>
+              <a href="#method-overriding">Method Overriding</a>
+
+              <a href="#access-modifiers">Access Modifiers</a>
+              <a href="#immutability">Immutability</a>
+              <a href="#design-patterns">Design Patterns</a>
+            </div>
+          </div>
+
+          <div className="index-row">
             <h4>Data Systems</h4>
             <div className="sublist">
               <a href="#sql">SQL</a>
