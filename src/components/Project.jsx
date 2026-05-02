@@ -1,100 +1,101 @@
-import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card } from 'react-bootstrap';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Lightbox from 'yet-another-react-lightbox';
+
+import 'swiper/css';
+import 'yet-another-react-lightbox/styles.css';
+
 import '../styles/projectStyles.css';
 import Tag from './Tag';
-import { Swiper, SwiperSlide, useState } from 'swiper/react';
-import 'swiper/css';
 
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+const Project = ({
+  title,
+  description,
+  image,
+  images = [],
+  gitlink,
+  deployedlink,
+  video,
+  staginglink,
+  tags = [],
+}) => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
 
+  const projectImages = Array.isArray(images) ? images : [];
+  const fallbackImages = Array.isArray(image) ? image : image ? [image] : [];
+  const galleryImages =
+    projectImages.length > 0 ? projectImages : fallbackImages;
 
-const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
   return (
-    <Card className="project-card ">
-
-
+    <Card className="project-card">
       <div className="myFlexCard">
+        {(video || galleryImages.length > 0) && (
+          <div className="media-container">
+            {video ? (
+              <video src={video} controls className="project-media" />
+            ) : (
+              <>
+                <Swiper spaceBetween={10} slidesPerView={1}>
+                  {galleryImages.map((img, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={img}
+                        alt={`${title} screenshot ${index + 1}`}
+                        className="project-media"
+                        onClick={() => {
+                          setImageIndex(index);
+                          setLightboxOpen(true);
+                        }}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
 
-        {/* <div className="media-container">
-          {video && (
-            <video
-              src={video}
-              controls
-              className="project-media"
-            />
-          )}
-
-          {image && !video && (
-            <img
-              src={image}
-              alt={title}
-              className="project-media"
-            />
-          )}
-        </div> */}
-
-<div className="media-container">
-  {video ? (
-    <video src={video} controls className="project-media" />
-  ) : Array.isArray(images) && images.length > 0 ? (
-    <Swiper spaceBetween={10} slidesPerView={1}>
-      {images.map((img, index) => (
-        <SwiperSlide key={index}>
-          <img
-            src={img}
-            alt={`${title}-${index}`}
-            className="project-media"
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  ) : image ? (
-    <img
-      src={image}
-      alt={title}
-      className="project-media"
-    />
-  ) : null}
-</div>
-
-
+                <Lightbox
+                  open={lightboxOpen}
+                  close={() => setLightboxOpen(false)}
+                  index={imageIndex}
+                  slides={galleryImages.map((img) => ({ src: img }))}
+                />
+              </>
+            )}
+          </div>
+        )}
 
         <div className="myCard">
-
           <Card.Body className="d-flex flex-column">
-
             <Card.Title>{title}</Card.Title>
-            <Card.Text className="project-description">{description}</Card.Text>
-            {tags && (
-              <div className="flex flex-wrap">
-                {tags.map((tag) => (
 
-                  <Tag key={tag} name={tag} />
+            <Card.Text className="project-description">
+              {description}
+            </Card.Text>
+
+            {Array.isArray(tags) && tags.length > 0 && (
+              <div className="flex flex-wrap">
+                {tags.map((tag, index) => (
+                  <Tag key={`${tag}-${index}`} name={tag} />
                 ))}
               </div>
             )}
 
-            <div className="viewGithubProject">
-              {gitlink && (
+            {gitlink && (
+              <div className="viewGithubProject">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={gitlink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-auto btn viewGithubProject btn-primary custom-btn"
+                  className="mt-auto btn btn-primary custom-btn"
                 >
                   View Github Project
                 </a>
-              )}
-            </div>
+              </div>
+            )}
 
             {staginglink && (
               <div className="mt-2">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={staginglink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,11 +105,10 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
                 </a>
               </div>
             )}
+
             {deployedlink && (
               <div className="mt-2">
                 <a
-                  role="button"
-                  tabIndex="0"
                   href={deployedlink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -120,16 +120,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
             )}
           </Card.Body>
         </div>
-
-
-
-
       </div>
-
-
-
-
-
     </Card>
   );
 };
