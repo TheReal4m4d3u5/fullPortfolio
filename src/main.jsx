@@ -5,6 +5,7 @@ import App from './App'; // Ensure path is correct
 import './styles/styles.css';
 
 import About from './pages/About';
+
 import ErrorBoundary from './components/ErrorBoundary';
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         path: '/About',
         element: <About />,
       },
+
     ],
   },
 ]);

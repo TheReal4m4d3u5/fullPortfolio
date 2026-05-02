@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 75px);
+  
+}
+
