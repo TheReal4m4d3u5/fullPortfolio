@@ -16,7 +16,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
-        {/* <div className="media-container">
+        <div className="media-container">
           {video && (
             <video
               src={video}
@@ -32,9 +32,9 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
               className="project-media"
             />
           )}
-        </div> */}
+        </div>
 
-    <div className="media-container">
+    {/* <div className="media-container">
       {video ? (
         <video src={video} controls className="project-media" />
       ) : (
@@ -52,7 +52,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
           </Swiper>
         )
       )}
-    </div>
+    </div> */}
 
 
 
