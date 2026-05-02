@@ -68,6 +68,26 @@ const pernProjects = [
   },
 ];
 
+const oopProjects = [
+  {
+    title: "Animal Inheritance System",
+    description:
+      "A Java-based object-oriented programming project demonstrating inheritance, polymorphism, and constructor chaining through a structured animal hierarchy.\n\nImplements a base Animal class extended by specialized subclasses (Dog, Fish, etc.), showcasing method overriding, use of the super keyword, and dynamic behavior across object types.\n\nHighlights core OOP design principles with clean class relationships and extensible architecture.\n• Inheritance and class hierarchies\n• Polymorphism and method overriding\n• Constructor chaining using this() and super()\n• Encapsulation and access control",
+    image: imageAnimal, // replace with your actual image import
+    gitLink: "https://github.com/TheReal4m4d3u5/animalInheritance",
+    tags: [
+      "Java",
+      "OOP",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Constructor Chaining",
+      "Method Overriding",
+      "Class Design",
+    ],
+  },
+];
+
 const backendSystemsProjects = [
   {
     title: "Aline",
@@ -1035,6 +1055,30 @@ const Portfolio = () => {
           </Col>
         ))}
       </Row>
+
+
+      <div id="oop" className="mongoDBHeader">
+        OOP
+      </div>
+
+      <Row className="portfolioCards">
+        {oopProjects.map((project, index) => (
+          <Col key={index} sm={12} md={6} lg={4} className="cards">
+            <Project
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              video={project.video}
+              videoText={project.videoText}
+              gitlink={project.gitLink}
+              deployedlink={project.deployed}
+              tags={project.tags}
+            />
+          </Col>
+        ))}
+      </Row>
+
+
 
       <div id="python" className="mongoDBHeader">
         Python
