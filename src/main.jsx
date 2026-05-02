@@ -5,9 +5,6 @@ import App from './App'; // Ensure path is correct
 import './styles/styles.css';
 
 import About from './pages/About';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const router = createBrowserRouter([
@@ -23,22 +20,6 @@ const router = createBrowserRouter([
       {
         path: '/About',
         element: <About />,
-      },
-      {
-        path: '/Contact',
-        element: (
-          <ErrorBoundary>
-            <Contact />
-          </ErrorBoundary>
-        ),
-      },
-      {
-        path: '/Portfolio',
-        element: <Portfolio />,
-      },
-      {
-        path: '/Resume',
-        element: <Resume />,
       },
     ],
   },
