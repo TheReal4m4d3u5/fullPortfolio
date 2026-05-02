@@ -731,15 +731,6 @@ const Portfolio = () => {
         {/* Index Section */}
         <nav className="portfolio-index">
           <div className="index-row">
-            <h4>Core Work</h4>
-            <div className="sublist">
-              <a href="#featured">Featured</a>
-              <a href="#fullStack">Full-Stack</a>
-              <a href="#systems">Systems</a>
-            </div>
-          </div>
-
-          <div className="index-row">
             <h4>Backend</h4>
             <div className="sublist">
               <a href="#java">Java</a>
@@ -764,6 +755,20 @@ const Portfolio = () => {
           </div>
 
           <div className="index-row">
+            <h4>Languages</h4>
+            <div className="sublist">
+              <a href="#java">Java</a>
+              <a href="#javascript">JavaScript</a>
+              <a href="#typescript">TypeScript</a>
+              <a href="#python">Python</a>
+              <a href="#csharp">C#</a>
+              <a href="#c">C</a>
+              <a href="#cpp">C++</a>
+              <a href="#matlab">MATLAB</a>
+            </div>
+          </div>
+
+          <div className="index-row">
             <h4>Data Systems</h4>
             <div className="sublist">
               <a href="#sql">SQL</a>
@@ -784,20 +789,6 @@ const Portfolio = () => {
               <a href="#reliability">Reliability</a>
               <a href="#caching">Caching</a>
               <a href="#queues">Queues</a>
-            </div>
-          </div>
-
-          <div className="index-row">
-            <h4>Languages</h4>
-            <div className="sublist">
-              <a href="#java">Java</a>
-              <a href="#javascript">JavaScript</a>
-              <a href="#typescript">TypeScript</a>
-              <a href="#python">Python</a>
-              <a href="#csharp">C#</a>
-              <a href="#c">C</a>
-              <a href="#cpp">C++</a>
-              <a href="#matlab">MATLAB</a>
             </div>
           </div>
 
