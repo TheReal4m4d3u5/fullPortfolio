@@ -34,25 +34,29 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
           )}
         </div> */}
 
-    <div className="media-container">
-      {video ? (
-        <video src={video} controls className="project-media" />
-      ) : (
-        images && (
-          <Swiper spaceBetween={10} slidesPerView={1}>
-            {images.map((img, index) => (
-              <SwiperSlide key={index}>
-                <img
-                  src={img}
-                  alt={`${title}-${index}`}
-                  className="project-media"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )
-      )}
-    </div>
+<div className="media-container">
+  {video ? (
+    <video src={video} controls className="project-media" />
+  ) : Array.isArray(images) && images.length > 0 ? (
+    <Swiper spaceBetween={10} slidesPerView={1}>
+      {images.map((img, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={img}
+            alt={`${title}-${index}`}
+            className="project-media"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  ) : image ? (
+    <img
+      src={image}
+      alt={title}
+      className="project-media"
+    />
+  ) : null}
+</div>
 
 
 
