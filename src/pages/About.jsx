@@ -2,6 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Project from "../components/Project";
 import "../styles/portfolioStyles.css";
+import ai1 from "../assets/animalInheritance/ai1.png";
+import ai2 from "../assets/animalInheritance/ai2.png";
+import ai3 from "../assets/animalInheritance/ai3.png";
+import ai4 from "../assets/animalInheritance/ai4.png";
 import image1 from "../../src/assets/image1.png";
 import image2 from "../../src/assets/image2.png";
 import image3 from "../../src/assets/image3.png";
@@ -73,7 +77,7 @@ const oopProjects = [
     title: "Animal Inheritance System",
     description:
       "A Java-based object-oriented programming project demonstrating inheritance, polymorphism, and constructor chaining through a structured animal hierarchy.\n\nImplements a base Animal class extended by specialized subclasses (Dog, Fish, etc.), showcasing method overriding, use of the super keyword, and dynamic behavior across object types.\n\nHighlights core OOP design principles with clean class relationships and extensible architecture.\n• Inheritance and class hierarchies\n• Polymorphism and method overriding\n• Constructor chaining using this() and super()\n• Encapsulation and access control",
-    image: image10, // replace with your actual image import
+    image: ai1, // replace with your actual image import
     gitLink: "https://github.com/TheReal4m4d3u5/animalInheritance",
     tags: [
       "Java",
