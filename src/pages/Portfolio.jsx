@@ -727,18 +727,8 @@ const Portfolio = () => {
         <h1 className="portfilioHeaderText">My Portfolio</h1>
       </section>
 
+      {/* Index Section */}
       <section className="index-Wraper">
-        {/* Index Section */}
-        <nav className="portfolio-index">
-          <div className="index-row">
-            <h4>Core Work</h4>
-            <div className="sublist">
-              <a href="#featured">Featured</a>
-              <a href="#fullStack">Full-Stack</a>
-              <a href="#systems">Systems</a>
-            </div>
-          </div>
-
           <div className="index-row">
             <h4>Backend</h4>
             <div className="sublist">
@@ -760,6 +750,21 @@ const Portfolio = () => {
               <a href="#typescript">TypeScript</a>
               <a href="#htmlcss">HTML / CSS</a>
               <a href="#ui">Responsive UI</a>
+            </div>
+          </div>
+
+
+          <div className="index-row">
+            <h4>Languages</h4>
+            <div className="sublist">
+              <a href="#java">Java</a>
+              <a href="#javascript">JavaScript</a>
+              <a href="#typescript">TypeScript</a>
+              <a href="#python">Python</a>
+              <a href="#csharp">C#</a>
+              <a href="#c">C</a>
+              <a href="#cpp">C++</a>
+              <a href="#matlab">MATLAB</a>
             </div>
           </div>
 
@@ -787,19 +792,7 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="index-row">
-            <h4>Languages</h4>
-            <div className="sublist">
-              <a href="#java">Java</a>
-              <a href="#javascript">JavaScript</a>
-              <a href="#typescript">TypeScript</a>
-              <a href="#python">Python</a>
-              <a href="#csharp">C#</a>
-              <a href="#c">C</a>
-              <a href="#cpp">C++</a>
-              <a href="#matlab">MATLAB</a>
-            </div>
-          </div>
+
 
           <div className="index-row">
             <h4>Math & Modeling</h4>
