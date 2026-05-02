@@ -2,6 +2,12 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import '../styles/projectStyles.css';
 import Tag from './Tag';
+import { Swiper, SwiperSlide, useState } from 'swiper/react';
+import 'swiper/css';
+
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 
 const Project = ({ title, description, image, gitlink, deployedlink, video, videoText, staginglink, tags }) => {
   return (
@@ -10,7 +16,7 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
 
       <div className="myFlexCard">
 
-        <div className="media-container">
+        {/* <div className="media-container">
           {video && (
             <video
               src={video}
@@ -26,7 +32,29 @@ const Project = ({ title, description, image, gitlink, deployedlink, video, vide
               className="project-media"
             />
           )}
-        </div>
+        </div> */}
+
+    <div className="media-container">
+      {video ? (
+        <video src={video} controls className="project-media" />
+      ) : (
+        images && (
+          <Swiper spaceBetween={10} slidesPerView={1}>
+            {images.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt={`${title}-${index}`}
+                  className="project-media"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        )
+      )}
+    </div>
+
+
 
         <div className="myCard">
 
