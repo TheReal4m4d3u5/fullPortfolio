@@ -12,13 +12,7 @@ function Header() {
   return (
     <header className="header">
       <div className="brand headerName">Avery Jacobson</div>
-      <button 
-        className={`menu-toggle ${isOpen ? 'open' : ''}`} 
-        onClick={toggleMenu}
-      >
-        ☰
-      </button>
-      <Navigation isOpen={isOpen} />
+
     </header>
   );
 }
