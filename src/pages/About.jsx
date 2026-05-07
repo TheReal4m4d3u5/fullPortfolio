@@ -40,9 +40,6 @@ import socialMediaVideo from "../../src/assets/socialMediaAPI.mp4";
 import vehicleVideo from "../../src/assets/module8.mp4";
 import employeeDB from "../../src/assets/employeeDB.mp4";
 
-
-
-
 const pernProjects = [
   {
     title: "Aline",
@@ -531,6 +528,26 @@ const pythonProjects = [
 ];
 
 const tDDProjects = [
+  {
+    title: "Playwright UI Testing & CI Pipeline",
+    description:
+      "Implemented browser-based end-to-end UI testing for a React portfolio using Playwright and GitHub Actions. Tests validate navigation, responsive rendering, footer visibility, project card layout behavior, and contact form rendering across desktop and mobile viewports.",
+    image: gitActions,
+    gitLink: "https://github.com/TheReal4m4d3u5/reactPortfolio",
+    deployed: "https://zesty-starlight-a7d6e2.netlify.app/",
+    tags: [
+      "Playwright",
+      "End-to-End Testing",
+      "GitHub Actions",
+      "React",
+      "CI/CD",
+      "Responsive Testing",
+      "Chromium",
+      "Mobile Testing",
+      "Trace Reports",
+    ],
+  },
+
   {
     title: "Tech Quiz Test Suite",
     description:
@@ -1063,9 +1080,6 @@ const Portfolio = () => {
         ))}
       </Row>
 
-
-
-
       <div id="oop" className="mongoDBHeader">
         OOP
       </div>
@@ -1086,8 +1100,6 @@ const Portfolio = () => {
           </Col>
         ))}
       </Row>
-
-
 
       <div id="python" className="mongoDBHeader">
         Python
