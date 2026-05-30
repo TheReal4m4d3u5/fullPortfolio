@@ -92,6 +92,28 @@ const oopProjects = [
   },
 ];
 
+const umlDomainDesign = [
+  {
+    title: "ICONIX Process & Domain Modeling",
+    description:
+      "Applied the ICONIX Process to analyze problem domains and transform requirements into object-oriented designs. Performed noun analysis to identify candidate entities, refined domain models, and developed UML diagrams to represent system structure and behavior.\n\nCreated class diagrams emphasizing Generalization, Aggregation, Composition, and Association relationships while maintaining separation between domain analysis and implementation. Used UML artifacts to validate system design before coding.\n\n• ICONIX Process\n• Domain Modeling\n• Noun Analysis\n• UML Class Diagrams\n• Generalization Relationships\n• Aggregation Relationships\n• Composition Relationships\n• Use Case Modeling\n• Sequence Diagrams\n• Object-Oriented Analysis & Design",
+    image: [ai1, ai2, ai3, ai4],
+    gitLink: "https://github.com/TheReal4m4d3u5/animalInheritance",
+    tags: [
+      "ICONIX",
+      "UML",
+      "Domain Modeling",
+      "System Design",
+      "OOAD",
+      "Generalization",
+      "Aggregation",
+      "Composition",
+      "Use Cases",
+      "Sequence Diagrams",
+    ],
+  },
+];
+
 const backendSystemsProjects = [
   {
     title: "Aline",
@@ -917,6 +939,20 @@ const Portfolio = () => {
           </div>
 
           <div className="index-row">
+            <h4>UML & Domain Design</h4>
+            <div className="sublist">
+              <a href="#domain-modeling">Domain Modeling</a>
+              <a href="#noun-analysis">Noun Analysis</a>
+              <a href="#uml-class-diagrams">UML Class Diagrams</a>
+              <a href="#use-case-diagrams">Use Case Diagrams</a>
+              <a href="#sequence-diagrams">Sequence Diagrams</a>
+              <a href="#state-diagrams">State Diagrams</a>
+              <a href="#system-design">System Design</a>
+              <a href="#iconix">ICONIX Process</a>
+            </div>
+          </div>
+
+          <div className="index-row">
             <h4>Testing</h4>
             <div className="sublist">
               <a href="#tdd">TDD</a>
@@ -987,6 +1023,23 @@ const Portfolio = () => {
           been in use
         </div>
       </div>
+
+      <Row className="portfolioCards">
+        {umlDomainDesign.map((project, index) => (
+          <Col key={index} sm={12} md={6} lg={4} className="cards">
+            <Project
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              video={project.video}
+              videoText={project.videoText}
+              gitlink={project.gitLink}
+              deployedlink={project.deployed}
+              tags={project.tags}
+            />
+          </Col>
+        ))}
+      </Row>
 
       <Row className="portfolioCards">
         {apiProjects.map((project, index) => (
