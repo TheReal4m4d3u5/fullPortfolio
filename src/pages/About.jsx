@@ -1014,20 +1014,6 @@ const Portfolio = () => {
         </nav>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div id="iconix" className="mongoDBHeader">
         ICONIX Process & Domain Modeling
       </div>
@@ -1055,8 +1041,6 @@ const Portfolio = () => {
         ))}
       </Row>
 
-
-
       <div id="iconix" className="mongoDBHeader">
         API's
       </div>
@@ -1065,6 +1049,7 @@ const Portfolio = () => {
           Some deployments will take 1 to 15 mins to spin up if they haven't
           been in use
         </div>
+      </div>
 
       <Row className="portfolioCards">
         {apiProjects.map((project, index) => (
